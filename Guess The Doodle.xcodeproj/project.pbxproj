@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0579172C1B301600B7F2C7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0579162C1B301600B7F2C7 /* GameView.swift */; };
 		EED88CC92C19D5E6005E6CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CC82C19D5E6005E6CD0 /* AppDelegate.swift */; };
 		EED88CCB2C19D5E6005E6CD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CCA2C19D5E6005E6CD0 /* SceneDelegate.swift */; };
 		EED88CCD2C19D5E6005E6CD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CCC2C19D5E6005E6CD0 /* ViewController.swift */; };
 		EED88CD02C19D5E6005E6CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED88CCE2C19D5E6005E6CD0 /* Main.storyboard */; };
 		EED88CD22C19D5E7005E6CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED88CD12C19D5E7005E6CD0 /* Assets.xcassets */; };
 		EED88CD52C19D5E7005E6CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED88CD32C19D5E7005E6CD0 /* LaunchScreen.storyboard */; };
+		EED88CDD2C19D83A005E6CD0 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CDC2C19D83A005E6CD0 /* MatchManager.swift */; };
+		EED88CDF2C19D849005E6CD0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CDE2C19D849005E6CD0 /* MenuView.swift */; };
+		EED88CE32C19D867005E6CD0 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CE22C19D867005E6CD0 /* Misc.swift */; };
+		EED88CE52C19F6C8005E6CD0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CE42C19F6C8005E6CD0 /* ButtonView.swift */; };
+		EED88CE72C19FFDF005E6CD0 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CE62C19FFDF005E6CD0 /* GameOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0579162C1B301600B7F2C7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EED88CC52C19D5E6005E6CD0 /* Guess The Doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess The Doodle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED88CC82C19D5E6005E6CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED88CCA2C19D5E6005E6CD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		EED88CD12C19D5E7005E6CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED88CD42C19D5E7005E6CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED88CD62C19D5E7005E6CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED88CDC2C19D83A005E6CD0 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		EED88CDE2C19D849005E6CD0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EED88CE22C19D867005E6CD0 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		EED88CE42C19F6C8005E6CD0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		EED88CE62C19FFDF005E6CD0 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				EED88CD12C19D5E7005E6CD0 /* Assets.xcassets */,
 				EED88CD32C19D5E7005E6CD0 /* LaunchScreen.storyboard */,
 				EED88CD62C19D5E7005E6CD0 /* Info.plist */,
+				EED88CDC2C19D83A005E6CD0 /* MatchManager.swift */,
+				EED88CDE2C19D849005E6CD0 /* MenuView.swift */,
+				EED88CE22C19D867005E6CD0 /* Misc.swift */,
+				EED88CE42C19F6C8005E6CD0 /* ButtonView.swift */,
+				EED88CE62C19FFDF005E6CD0 /* GameOverView.swift */,
+				EE0579162C1B301600B7F2C7 /* GameView.swift */,
 			);
 			path = "Guess The Doodle";
 			sourceTree = "<group>";
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED88CDF2C19D849005E6CD0 /* MenuView.swift in Sources */,
 				EED88CCD2C19D5E6005E6CD0 /* ViewController.swift in Sources */,
+				EED88CDD2C19D83A005E6CD0 /* MatchManager.swift in Sources */,
+				EED88CE32C19D867005E6CD0 /* Misc.swift in Sources */,
+				EE0579172C1B301600B7F2C7 /* GameView.swift in Sources */,
 				EED88CC92C19D5E6005E6CD0 /* AppDelegate.swift in Sources */,
 				EED88CCB2C19D5E6005E6CD0 /* SceneDelegate.swift in Sources */,
+				EED88CE72C19FFDF005E6CD0 /* GameOverView.swift in Sources */,
+				EED88CE52C19F6C8005E6CD0 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
