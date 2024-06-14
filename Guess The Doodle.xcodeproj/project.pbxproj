@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE0579172C1B301600B7F2C7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0579162C1B301600B7F2C7 /* GameView.swift */; };
+		EEB16CCC2C1C753C00166018 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB16CCB2C1C753C00166018 /* DrawingView.swift */; };
 		EED88CC92C19D5E6005E6CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CC82C19D5E6005E6CD0 /* AppDelegate.swift */; };
 		EED88CCB2C19D5E6005E6CD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CCA2C19D5E6005E6CD0 /* SceneDelegate.swift */; };
 		EED88CCD2C19D5E6005E6CD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED88CCC2C19D5E6005E6CD0 /* ViewController.swift */; };
@@ -22,7 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE0579162C1B301600B7F2C7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EE0579162C1B301600B7F2C7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EEB16CCB2C1C753C00166018 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		EED88CC52C19D5E6005E6CD0 /* Guess The Doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess The Doodle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED88CC82C19D5E6005E6CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED88CCA2C19D5E6005E6CD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				EED88CE42C19F6C8005E6CD0 /* ButtonView.swift */,
 				EED88CE62C19FFDF005E6CD0 /* GameOverView.swift */,
 				EE0579162C1B301600B7F2C7 /* GameView.swift */,
+				EEB16CCB2C1C753C00166018 /* DrawingView.swift */,
 			);
 			path = "Guess The Doodle";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				EE0579172C1B301600B7F2C7 /* GameView.swift in Sources */,
 				EED88CC92C19D5E6005E6CD0 /* AppDelegate.swift in Sources */,
 				EED88CCB2C19D5E6005E6CD0 /* SceneDelegate.swift in Sources */,
+				EEB16CCC2C1C753C00166018 /* DrawingView.swift in Sources */,
 				EED88CE72C19FFDF005E6CD0 /* GameOverView.swift in Sources */,
 				EED88CE52C19F6C8005E6CD0 /* ButtonView.swift in Sources */,
 			);

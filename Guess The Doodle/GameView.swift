@@ -16,7 +16,38 @@ struct GameView: View {
         
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            GeometryReader{_ in
+                Image(MatchManager.currentlyDrawing ? "drawBg": "guesserBg").resizable().ignoresSafeArea().scaledToFill()
+                    .scaleEffect(1.2)
+            }
+            VStack(){
+               topBar
+            Spacer()
+            }
+            
+        }
+      
+    }
+    var topBar: some View {
+        ZStack(){
+            HStack(spacing: 0.0){
+                Button{
+                    
+                    
+                }label: {
+                    Image(systemName: "arrowshape.turn.up.left.circle.fill")
+                        .font(.largeTitle)
+                        .tint(Color(MatchManager.currentlyDrawing ? "primaryYellow": "primaryPurple"))
+                        
+                }
+                Spacer()
+                Label("\(MatchManager.remainingTime)", systemImage: "clock.fill").bold().font(.title2)
+                
+            }
+            
+        }
+        
     }
 }
 
