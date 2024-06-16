@@ -7,13 +7,15 @@
 
 import SwiftUI
 import PencilKit
+var countDownTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 struct GameView: View {
     @ObservedObject var MatchManager: MatchManager
     @State var drawingGuess = ""
     @State var eraserEnabled = false
     func makeGuess(){
-        //TODO: Submit to guess
-        
+        guard drawingGuess != "" else{return}
+        MatchManager.sendString("guess: \(drawingGuess)")
+        drawingGuess = ""
     }
     var body: some View {
         ZStack {
@@ -63,13 +65,17 @@ struct GameView: View {
                 promptGroup
             }.ignoresSafeArea(.container)
         }
-        
+        .onReceive(countDownTimer) { _ in
+            guard MatchManager.isTimeKeeper else {return}
+            MatchManager.remainingTime -= 1
+        }
     }
     var topBar: some View {
         ZStack(){
             HStack(spacing: 0.0){
                 Button{
-                    
+                    MatchManager.match?.disconnect()
+                    MatchManager.resetGame()
                     
                 }label: {
                     Image(systemName: "arrowshape.turn.up.left.circle.fill")
@@ -81,7 +87,10 @@ struct GameView: View {
                 Label("\(MatchManager.remainingTime)", systemImage: "clock.fill").bold().font(.title2)
                 
             }
-            
+            Text("Score: \(MatchManager.score)")
+                .bold()
+                .font(.title)
+                .foregroundColor(Color(MatchManager.currentlyDrawing ? "primaryYellow": "primaryPurple"))
         }
         
     }

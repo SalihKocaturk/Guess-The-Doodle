@@ -21,7 +21,14 @@ extension MatchManager: GKMatchmakerViewControllerDelegate{
         viewController.dismiss(animated: true)
         startGame(newMatch: match)
     }
-    func matchmakerViewController(_ viewController: GKMatchmakerViewController, hostedPlayerDidAccept player: GKPlayer) {
-        <#code#>
+    func match(_ match: GKMatch, player: GKPlayer, didChange state: GKPlayerConnectionState) {
+        guard state == .disconnected && isGameOver == true else{return}
+        let alert = UIAlertController(title: "Player Left", message: "Your Enemy Left The Game!", preferredStyle: .alert)
+        let OkButton = UIAlertAction(title: "OK", style: .default){  _ in self.match?.disconnect()}
+        alert.addAction(OkButton)
+        DispatchQueue.main.async {
+            self.resetGame()
+            self.rootViewController?.present(alert, animated: true)
+        }
     }
 }

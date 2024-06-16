@@ -21,7 +21,8 @@ struct MenuView: View {
                 .padding(30)
             Spacer()
             ButtonView(str: .constant("PLAY"), color1: .constant(Color.blue), color2: .constant(Color.yellow), color3: .constant(Color.blue))
-.renameAction {
+                .renameAction {
+                    MatchManager.startMatchMaking()
                 //addaction
             }.padding(.vertical, 20)
                 .padding(.horizontal, 100)

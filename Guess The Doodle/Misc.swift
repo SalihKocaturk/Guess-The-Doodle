@@ -21,13 +21,13 @@ let everydayObjects: [String] = [
 enum PlayerAuthState: String {
     case authenticating = "Logging in to Game Center..."
     case unauthenticated = "Please sign in to Game Center to play."
-    case authenticated = "sex"
+    case authenticated = "Authenticated"
     
     case error = "There was an error logging into Game Center."
     case restricted = "You're not allowed to play multiplayer games!"
 }
 
-struct PastGuess: Identifiable {
+struct PastGuess: Identifiable{
     let id = UUID()
     var message: String
     var correct: Bool

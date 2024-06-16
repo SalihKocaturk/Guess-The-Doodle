@@ -24,6 +24,7 @@ struct GameOverView: View {
              ButtonView(str: .constant("PLAY"), color1: .constant(Color.yellow), color2: .constant(Color.yellow), color3: .constant(Color.yellow))
 
                  .renameAction {
+                     MatchManager.resetGame()
                  //addaction
              }
              .padding(.vertical, 20)
